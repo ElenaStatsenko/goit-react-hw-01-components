@@ -1,4 +1,8 @@
+
 export const Friendlist= ({friends}) => {
+
+export const FriendList= ({friends}) => {
+
     return (
         <ul>
        {friends.map(friend => (
