@@ -1,7 +1,6 @@
 
-export const Friendlist= ({friends}) => {
 
-export const FriendList= ({friends}) => {
+export const Friendlist= ({friends}) => {
 
     return (
         <ul>

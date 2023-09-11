@@ -1,18 +1,11 @@
-{
-  /* <Profile
-  username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats} */
-}
+import {ProfileList} from './Profile.styled'
 
 export const Profile = ({
   userName: { username, tag, location, avatar, stats: {followers, views, likes} },
 }) => {
  
   return (
-    <div className="profile">
+    <ProfileList>
       <div className="description">
         <img src={avatar} alt="User avatar" className="avatar" />
         <p className="name">{username}</p>
@@ -34,6 +27,6 @@ export const Profile = ({
           <span className="quantity">{likes}</span>
         </li>
       </ul>
-    </div>
+    </ProfileList>
   );
 };
