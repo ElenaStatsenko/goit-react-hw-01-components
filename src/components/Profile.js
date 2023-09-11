@@ -1,15 +1,20 @@
-import {ProfileList} from './Profile.styled'
+import { ProfileList } from './Profile.styled';
 
 export const Profile = ({
-  userName: { username, tag, location, avatar, stats: {followers, views, likes} },
+  userName: {
+    username,
+    tag,
+    location,
+    avatar,
+    stats: { followers, views, likes },
+  },
 }) => {
- 
   return (
     <ProfileList>
       <div className="description">
         <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
+        <h2 className="name">{username}</h2>
+        <p className="tag">{tag}</p>
         <p className="location">{location}</p>
       </div>
 
