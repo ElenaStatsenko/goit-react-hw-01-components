@@ -8,6 +8,13 @@ import {Friendlist} from './FriendList'
 import { TransactionHistory } from "./TransactionHistory";
 import { GlobalStyled } from "./GlobalStyle";
 export const App = () => {
+  
+  
+  
+  
+  
+  
+  
   return (
     <>
     <GlobalStyled/>
